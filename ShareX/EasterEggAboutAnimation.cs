@@ -35,7 +35,7 @@ namespace ShareX
     {
         public Canvas Canvas { get; private set; }
         public bool IsPaused { get; set; }
-        public Size Size { get; set; } = new Size(200, 200);
+        public Size Size { get; set; } = new Size(100, 100);
         public int Step { get; set; } = 10;
         public int MinStep { get; set; } = 3;
         public int MaxStep { get; set; } = 35;
@@ -58,7 +58,7 @@ namespace ShareX
         public void Start()
         {
             direction = Speed;
-            Canvas.Start(50);
+            Canvas.Start(30);
         }
 
         private void Canvas_MouseDown(object sender, MouseEventArgs e)
@@ -75,10 +75,7 @@ namespace ShareX
                     easterEggBounce.Start();
                 }
             }
-            else
-            {
-                easterEggBounce.Stop();
-            }
+
         }
 
         private void Canvas_Draw(Graphics g)
@@ -142,7 +139,7 @@ namespace ShareX
                 }
                 else
                 {
-                    hsb.Hue += 0.01;
+                    hsb.Hue += 0.02;
                 }
 
                 Color = hsb;

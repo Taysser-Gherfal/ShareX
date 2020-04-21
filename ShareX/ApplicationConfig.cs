@@ -36,7 +36,7 @@ namespace ShareX
 {
     public class ApplicationConfig : SettingsBase<ApplicationConfig>
     {
-        public TaskSettings DefaultTaskSettings = new TaskSettings();
+        public TaskSettings DefaultTaskSetting = new TaskSettings();
 
         public DateTime FirstTimeRunDate = DateTime.Now;
         public string FileUploadDefaultDirectory = "";
