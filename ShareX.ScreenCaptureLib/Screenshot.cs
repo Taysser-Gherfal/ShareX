@@ -1,6 +1,7 @@
 ﻿#region License Information (GPL v3)
 
 /*
+
     ShareX - A program that allows you to take screenshots and share any file type
     Copyright (c) 2007-2020 ShareX Team
 
