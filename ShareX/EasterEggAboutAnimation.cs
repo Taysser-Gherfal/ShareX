@@ -35,16 +35,18 @@ namespace ShareX
     {
         public Canvas Canvas { get; private set; }
         public bool IsPaused { get; set; }
-        public Size Size { get; set; } = new Size(200, 200);
-        public int Step { get; set; } = 10;
-        public int MinStep { get; set; } = 3;
-        public int MaxStep { get; set; } = 35;
+        public Size Size { get; set; } = new Size(150, 150);
+        public int Step { get; set; } = 15;
+        public int MinStep { get; set; } = 4;
+        public int MaxStep { get; set; } = 54;
         public int Speed { get; set; } = 1;
         public Color Color { get; set; } = new HSB(0.0, 1.0, 0.9);
         public int ClickCount { get; private set; }
 
+
         private EasterEggBounce easterEggBounce;
         private int direction;
+        private int state;
 
         public EasterEggAboutAnimation(Canvas canvas, Form form)
         {
