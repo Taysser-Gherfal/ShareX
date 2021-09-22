@@ -145,7 +145,7 @@ namespace ShareX
                 }
                 else
                 {
-                    hsb.Hue += 0.01;
+                    hsb.Hue += 0.02;
                 }
 
                 Color = hsb;
