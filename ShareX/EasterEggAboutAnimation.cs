@@ -61,7 +61,7 @@ namespace ShareX
         public void Start()
         {
             direction = Speed;
-            Canvas.Start(50);
+            Canvas.Start(20);
         }
 
         private void Canvas_MouseDown(object sender, MouseEventArgs e)
@@ -145,7 +145,7 @@ namespace ShareX
                 }
                 else
                 {
-                    hsb.Hue += 0.02;
+                    hsb.Hue += 0.04;
                 }
 
                 Color = hsb;

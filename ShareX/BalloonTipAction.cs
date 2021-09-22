@@ -25,7 +25,7 @@
 
 namespace ShareX
 {
-    public class BalloonTipAction
+    public class BalloonTip
     {
         public BalloonTipClickAction ClickAction { get; set; }
         public string Text { get; set; }
