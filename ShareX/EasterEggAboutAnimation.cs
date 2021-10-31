@@ -35,7 +35,7 @@ namespace ShareX
     {
         public Canvas Canvas { get; private set; }
         public bool IsPaused { get; set; }
-        public Size Size { get; set; } = new Size(200, 200);
+        public Size Size { get; set; } = new Size(250, 250);
         public int Step { get; set; } = 10;
         public int MinStep { get; set; } = 3;
         public int MaxStep { get; set; } = 35;
@@ -69,7 +69,7 @@ namespace ShareX
             {
                 ClickCount++;
 
-                if (ClickCount >= 10)
+                if (ClickCount >= 12)
                 {
                     easterEggBounce.ApplyGravity = e.Button == MouseButtons.Left;
                     easterEggBounce.Start();
@@ -142,7 +142,7 @@ namespace ShareX
                 }
                 else
                 {
-                    hsb.Hue += 0.01;
+                    hsb.Hue += 2.01;
                 }
 
                 Color = hsb;
