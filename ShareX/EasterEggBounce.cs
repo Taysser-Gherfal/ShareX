@@ -35,10 +35,10 @@ namespace ShareX
         public Form Form { get; private set; }
         public bool IsWorking { get; private set; }
         public Rectangle BounceRectangle { get; set; }
-        public int Speed { get; set; } = 20;
+        public int Speed { get; set; } = 22;
         public bool ApplyGravity { get; set; } = true;
         public int GravityPower { get; set; } = 3;
-        public int BouncePower { get; set; } = 50;
+        public int BouncePower { get; set; } = 55;
 
         private Timer timer;
         private Point velocity;
