@@ -28,6 +28,7 @@ using ShareX.Properties;
 using System.Drawing;
 using System.Windows.Forms;
 
+
 namespace ShareX
 {
     public class QuickTaskMenu
